@@ -153,9 +153,12 @@ button {
 }
 .header-logo {
   color: var(--dark-color);
-  margin-right: 76px;
+
   padding-top: 24px;
   padding-bottom: 24px;
+}
+.hlw {
+  margin-right: 76px;
 }
 
 .list {
@@ -163,6 +166,7 @@ button {
 }
 .nav {
   display: flex;
+  align-items: center;
 }
 .nav-list {
   display: flex;
@@ -206,8 +210,6 @@ button {
 }
 /* hero */
 .hero-container {
-  padding-top: 188px;
-  padding-bottom: 188px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -225,11 +227,13 @@ button {
 
 .hero-section {
   background-color: var(--hero-background);
+  padding: 188px 0 188px;
 }
 
 /* features */
-.features-container {
-  padding-top: 120px;
+
+.features-section {
+  padding: 120px 0;
 }
 .features-list {
   display: flex;
@@ -238,40 +242,51 @@ button {
 .features-list-item {
   flex-basis: calc((100% - 3 * 24) / 4);
 }
+.features-subtitle {
+  margin-bottom: 8px;
+}
 /* about us */
-.about-container {
-  padding-top: 120px;
+.about-section {
   padding-bottom: 120px;
 }
+.about-subtitle {
+  margin-bottom: 72px;
+}
 .photo-list {
-  margin-top: 72px;
   display: flex;
   gap: 24px;
 }
+.photo-list-item {
+  flex-basis: calc((100% - 3 * 16px) / 3);
+}
 /* team */
-.team-container {
-  padding-top: 120px;
-  padding-bottom: 120px;
+.team-title {
+  margin-bottom: 72px;
 }
 .st-cards-list {
-  margin-top: 72px;
   display: flex;
   gap: 24px;
 }
 .st-cards-text {
   padding-top: 32px;
   padding-bottom: 32px;
-  display: flex;
-  flex-direction: column;
-  gap: 8px;
-  align-items: center;
 }
+
 .team-section {
   background-color: var(--light-color);
+  padding: 120px 0;
 }
 .st-cards-item {
   background-color: var(--white-background);
   flex-basis: calc((100% - 3 * 8) / 4);
+  border-radius: 0px 0px 4px 4px;
+}
+.team-subtitle {
+  text-align: center;
+  margin-bottom: 8px;
+}
+.team-text {
+  text-align: center;
 }
 /* footer */
 .footer-background {
@@ -286,10 +301,10 @@ button {
   color: var(--light-color);
   width: 264px;
 }
-.footer-container {
-  display: flex;
-  flex-direction: column;
-  gap: 16px;
+
+.flb {
+  display: inline-block;
+  margin-bottom: 16px;
 }
 /*
   |============================
@@ -298,6 +313,7 @@ button {
 */
 .pf-container {
   padding-top: 96px;
+  padding-bottom: 120px;
 }
 .portfolio-list-button {
   background: var(--light-color);
@@ -315,27 +331,28 @@ button {
 .portfolio-list-button:focus {
   background-color: var(--pressed-state);
   color: var(--white-background);
+  border: 1px solid transparent;
 }
 .pf-list {
   display: flex;
   gap: 24px;
   justify-content: center;
+  margin-bottom: 72px;
 }
 .pf-cards-list {
-  margin-top: 72px;
   display: flex;
-  gap: 24px;
+  column-gap: 24px;
   flex-wrap: wrap;
+  row-gap: 48px;
 }
 .pf-cards-item {
   flex-basis: calc((100% - 2 * 24) / 3);
-  margin-bottom: 48px;
 }
-.pf-cards-text{
+.pf-cards-text {
   padding: 32px 16px;
   border: 1px solid var(--accent-color);
   border-top: none;
 }
-.pf-subtitle{
+.pf-subtitle {
   margin-bottom: 8px;
 }
